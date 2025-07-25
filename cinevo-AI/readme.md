@@ -1,14 +1,15 @@
+
 # 🧠 CINEVO-AI: YOLOv8 Object Detection Web App
 
-![Banner](logo.jpg)
+![Banner](object_detection/photo-ai.jpeg)
 
-*CINEVO-AI* is a powerful, user-friendly web application built with *Streamlit* and *YOLOv8* by Ultralytics. It allows users to detect objects in *images, **videos, and **live webcam feeds—including support for **external webcams* and *IP-based phone cameras*. It uses GPU acceleration (if available) and includes a beautiful UI with custom background, sidebar logo, contact links, and download options.
+**CINEVO-AI** is a powerful, user-friendly web application built with **Streamlit** and **YOLOv8** by Ultralytics. It allows users to detect objects in **images**, **videos**, and **live webcam feeds**—including support for **external webcams** and **IP-based phone cameras**. It uses GPU acceleration (if available) and includes a beautiful UI with custom background, sidebar logo, contact links, and download options.
 
 ---
 
 ## 🚀 Features
 
-- 🖼 Image-based object detection  
+- 🖼️ Image-based object detection  
 - 🎥 Video-based object detection with frame-by-frame processing  
 - 🔴 Real-time webcam detection (laptop, USB webcam, or IP stream)  
 - 💻 GPU support via PyTorch CUDA (if available)  
@@ -22,27 +23,27 @@
 
 ## 📦 Requirements
 
-Install dependencies from requirements.txt:
+Install dependencies from `requirements.txt`:
 
-bash
+```bash
 pip install -r requirements.txt
+```
 
-
-Example requirements.txt:
-
+Example `requirements.txt`:
+```txt
 streamlit
 torch
 ultralytics
 Pillow
 opencv-python
 numpy
-
+```
 
 ---
 
-## 🛠 Project Structure
+## 🛠️ Project Structure
 
-
+```
 object_detection/
 │
 ├── app copy.py                  # Main Streamlit app
@@ -50,15 +51,15 @@ object_detection/
 ├── photo-ai.jpeg           # Background image
 ├── cinevo ai.jpg           # Sidebar circular logo
 └── outputs/                # Folder to store output videos
-
+```
 
 ---
 
-## ▶ Run the App
+## ▶️ Run the App
 
-bash
+```bash
 streamlit run app copy.py
-
+```
 
 Then open your browser at: [http://localhost:8501](http://localhost:8501)
 
@@ -66,24 +67,24 @@ Then open your browser at: [http://localhost:8501](http://localhost:8501)
 
 ## 📷 Usage Guide
 
-### 1. *Detect in Image*
-- Upload an image (jpg/png)
-- Click *Detect*
+### 1. **Detect in Image**
+- Upload an image (`jpg/png`)
+- Click **Detect**
 - Download the result
 
-### 2. *Detect in Video*
-- Upload a video file (mp4/avi/mov)
-- Click *Detect Objects in Video*
+### 2. **Detect in Video**
+- Upload a video file (`mp4/avi/mov`)
+- Click **Detect Objects in Video**
 - Wait for processing and download the result
 
-### 3. *Live Webcam Detection*
+### 3. **Live Webcam Detection**
 - Choose from:
   - Laptop Webcam (default)
   - External Webcam (change index if needed)
-  - Phone Camera (via IP stream like http://192.168.0.101:8080/video)
+  - Phone Camera (via IP stream like `http://192.168.0.101:8080/video`)
 - Start and stop live detection
 
-> 💡 Tip: Use apps like *DroidCam* or *IP Webcam* on Android to stream phone camera
+> 💡 Tip: Use apps like **DroidCam** or **IP Webcam** on Android to stream phone camera
 
 ---
 
@@ -102,7 +103,3 @@ Then open your browser at: [http://localhost:8501](http://localhost:8501)
 - yuvrajkumarsingh303@gmail.com
 
 ---
-
-## 📄 License
-
-This project is open source under the [MIT License](LICENSE).
