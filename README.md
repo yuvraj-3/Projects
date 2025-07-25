@@ -14,7 +14,7 @@ A machine learning-based engine that provides personalized movie recommendations
 - Uses collaborative and content-based filtering
 - Built with `scikit-learn`, `pandas`, and `numpy`
 
-🔗 **[Open Project](./movie-recommendation)**
+🔗 **[Open Project](./Movie%20Recommendation%20System)**
 
 ---
 
