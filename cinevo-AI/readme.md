@@ -1,7 +1,7 @@
 
 # 🧠 CINEVO-AI: YOLOv8 Object Detection Web App
 
-![Banner](object_detection/photo-ai.jpeg)
+![Banner](logo.jpg)
 
 **CINEVO-AI** is a powerful, user-friendly web application built with **Streamlit** and **YOLOv8** by Ultralytics. It allows users to detect objects in **images**, **videos**, and **live webcam feeds**—including support for **external webcams** and **IP-based phone cameras**. It uses GPU acceleration (if available) and includes a beautiful UI with custom background, sidebar logo, contact links, and download options.
 
@@ -44,13 +44,29 @@ numpy
 ## 🛠️ Project Structure
 
 ```
-object_detection/
+CINEVO-AI/
 │
-├── app copy.py                  # Main Streamlit app
-├── yolov8n.pt              # YOLOv8 model (auto-downloaded if not present)
-├── photo-ai.jpeg           # Background image
-├── cinevo ai.jpg           # Sidebar circular logo
-└── outputs/                # Folder to store output videos
+├── .venv/                         # Virtual environment (optional, usually in .gitignore)
+├── app/
+│   ├── app.py                     # Main Streamlit app
+│   └── app2.py                    # Additional app logic or helper script
+├── outputs/
+│   ├── detected_image.jpg         # Example output image
+│   └── detected_output.mp4        # Example output video
+├── results/                       # Results or logs directory (empty by default)
+├── uploads/
+│   ├── back.jpg                   # Uploaded example image
+│   ├── bus.jpg
+│   ├── download (1).jpeg
+│   ├── zidane.jpg
+│   └── ...                        # Other uploads
+├── 3.jpg                          # Additional project image
+├── back.jpg                       # Additional project image
+├── logo.jpg                       # Sidebar logo
+├── yolov5s.pt                     # YOLOv5 model checkpoint
+├── yolov8n.pt                     # YOLOv8 model checkpoint
+├── readme.md                      # Project documentation
+└── requirements.txt               # Python dependencies list
 ```
 
 ---
